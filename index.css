@@ -1,9 +1,87 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
 a {
   text-decoration: none;
 }
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 48px;
+}
 
-a:hover {
-  text-decoration: underline;
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background: #222425;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  /*height: 400px;*/
+}
+.contentin {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 150px;
+}
+.bottonin {
+  display: flex;
+}
+.buttons {
+  padding-left: 8px;
+}
+
+.button {
+  border: none;
+  margin: 0;
+
+  color: #e8eaed;
+  word-wrap: break-word;
+  outline: none;
+  display: flex;
+  -webkit-tap-highlight-color: transparent;
+  width: 500px;
+  height: 42.5px;
+  background-color: #1d1c1c;
+  font-size: 20pt;
+  text-align: center;
+  padding-top: 7.5px;
+  cursor: pointer;
+  font-family: impact;
+  border-radius: 50px;
+}
+
+.button-header {
+  padding-right: 8px;
+}
+.button:hover {
+  background-color: #303030;
+  color: #313030;
+}
+
+.button .img {
+  background-image: src= "images/tia.png";
+  background-size: 100%;
+  margin-top: 7.5px;
+  width: 20px;
+  height: 20px;
+}
+
+.button:hover .img {
+  background-image: src= "images/tia.png";
 }
 
 .btn {
@@ -18,48 +96,23 @@ a:hover {
   /* Поля вокруг текста */
   text-decoration: none;
   /* Убираем подчёркивание */
-  border-radius: 3px;
+  border-radius: 10px;
   /* Скругляем уголки */
 }
-
-.button {
-  width: 200px;
-  height: 42.5px;
-  background-color: #000;
-  border-radius: 10px;
-  color: #fff;
-  font-size: 20pt;
-  text-align: center;
-  padding-top: 7.5px;
-  cursor: pointer;
-  font-family: impact;
+.russia {
+  padding: 15px 30px;
+  border-bottom: 1px solid #3c4043;
+  font-size: 15px;
+  color: #9aa0a6;
+  background: #000;
 }
 
-.button:hover {
-  background-color: #fff;
-  color: #000;
-  border: 1px solid #000;
-}
-
-.button .img {
-  background-image: url("ic-menu-dark.png");
-  background-size: 100%;
-  margin-top: 7.5px;
-  width: 20px;
-  height: 20px;
-  margin-left: 20px;
-}
-
-.button:hover .img {
-  background-image: url("ic-menu-white.png");
-}
-
-a {
-  text-decoration: none;
-}
-
-.verticalcenter {
-  display: table-cell;
-  height: 300px;
-  vertical-align: middle;
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 141.6px;
+  background: #000;
+  flex-direction: column;
+  padding: 0 20px;
 }

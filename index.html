@@ -2,37 +2,62 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <script src="./index.js"></script>
     <title>Google</title>
     <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="normalize.css" />
   </head>
-  <body link="#FFFFFF" vlink="FFFFFF" alink="FFFFFF" bgcolor="222425">
-    <div class="link">
-      <p align="right">
-        <a href="link.html">Почта </a>
-        <a href="link2.html">Картинки</a>
-      </p>
-    </div>
-    <center>
-      <div class="verticalcenter">
+  <body link="#FFFFFF" vlink="FFFFFF" alink="FFFFFF">
+    <div class="page">
+      <header class="header">
+        <div class="buttons">
+          <a href="link.html" class="button-header">Почта</a>
+          <a href="link2.html" class="button-header">Картинки</a>
+        </div>
+      </header>
+      <content class="content">
         <img src="images/googlelogo_light_color_272x92dp.png" alt="отцентрированное изображение" />
-      </div>
-    </center>
-    <a>
-      <div class="button">
-        <img src="ic-menu-dark.png" />
-        <input name="s" placeholder="Искать здесь..." type="search" />
-      </div>
-    </a>
-    <center>
-      <form action="" method="get">
-        <input name="s" placeholder="Искать здесь..." type="search" />
-        <button type="submit">Поиск</button>
-        <p></p>
-      </form>
-      <a href="link2.html" class="btn">Поиск в Google</a>
-      <a> </a>
-      <a href="link2.html" class="btn">Мне повезёт!</a>
-    </center>
-    <script src="index.js"></script>
+        <contentin class="contentin">
+          <a>
+            <div class="button">
+              <img src="images/tia.png" />
+              <input
+                name="s"
+                placeholder="Искать здесь..."
+                title="Поиск"
+                type="text"
+                value
+                aria-label="Поиск"
+              />
+            </div>
+          </a>
+          <bottonin class="bottonin">
+            <a href="link2.html" class="btn">Поиск в Google</a>
+            <a href="link2.html" class="btn">Мне повезёт!</a>
+          </bottonin>
+        </contentin>
+      </content>
+      <prefooter class="prefooter">
+        <div class="russia">Россия</div>
+      </prefooter>
+      <footer class="footer">
+        <div class="top">
+          <a href="link2.html" class="button-header">Все о Google</a>
+          <a href="link.html" class="button-header">Реклама</a>
+          <a href="link2.html" class="button-header">Для бизнеса</a>
+          <a href="link.html" class="button-header">Как работает Google Поиск</a>
+        </div>
+        <div class="centre">
+          <a href="green-link.html" class="button-header"
+            >Нулевой баланс выбросов углекислого газа с 2007 года</a
+          >
+        </div>
+        <div class="buttom">
+          <a href="link2.html" class="button-header">Конфидециальность</a>
+          <a href="link.html" class="button-header">Условия</a>
+          <a href="settings.html" class="button-header">Настройки</a>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
